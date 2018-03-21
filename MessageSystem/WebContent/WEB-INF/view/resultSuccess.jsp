@@ -6,11 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title><spring:message code="resultsuccess"></spring:message></title>
 </head>
 <body>
-<h3><spring:message code="basarili"/><spring:message code="gonderen"/> ${result.amount} <spring:message code="geldi"/></h3>
-<br>
-<h3><spring:message code="yenibakiye"/> ${result.balance}</h3>
+<h3>${result.result}</h3>
 </body>
 </html>

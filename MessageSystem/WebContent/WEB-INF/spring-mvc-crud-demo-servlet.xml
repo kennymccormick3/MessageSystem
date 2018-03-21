@@ -28,10 +28,7 @@
 	
 	<mvc:resources mapping="/resources/**" location="/resources/" />
  
-	 <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-	  <property name="basenames" value="classpath:mobile, classpath:web, classpath:branch" />
-	  <property name="defaultEncoding" value="UTF-8" />
-	 </bean>
+	 
 	
 	 <mvc:interceptors>
 	  <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
@@ -46,8 +43,3 @@
 	
     
 </beans>
-
-
-
-
-

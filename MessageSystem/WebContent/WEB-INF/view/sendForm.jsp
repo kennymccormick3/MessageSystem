@@ -6,18 +6,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title><spring:message code="sendmoney"></spring:message></title>
 </head>
 <body>
 	
 	<form:form action="processForm" modelAttribute="result">
 		
-		<p><spring:message code="bakiye"/><form:input path="balance"/></p>
+		<p><spring:message code="balance"/><form:input path="balance"/></p>
 		<br>
-		<p><spring:message code="gonderilecektutar"/><form:input path="amount"/></p>	
+		<p><spring:message code="amount"/><form:input path="amount"/></p>	
 		<br>
 		
-		<input type="submit" value="Send"/>
+		<form:select path="branchType">
+			<form:option value="w"><spring:message code="web"></spring:message></form:option>
+			<form:option value="m"><spring:message code="mobile"></spring:message></form:option>
+			<form:option value="b"><spring:message code="boffice"></spring:message></form:option>
+		</form:select>
+		
+		<button type="submit"><spring:message code="sendmoney"></spring:message></button>
 		
 	</form:form>
 </body>

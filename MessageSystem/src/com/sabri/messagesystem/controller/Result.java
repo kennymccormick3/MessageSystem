@@ -4,7 +4,10 @@ public class Result {
 	private String branchType;
 	private int amount;
 	private int balance;
+	private String result;
 	
+	
+
 	
 
 	public Result() {
@@ -35,10 +38,15 @@ public class Result {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+	
+	public String getResult() {
+		return result;
+	}
 
-	
-	
-	
+	public void setResult(String result) {
+		this.result = result;
+	}
+
 	
 	
 	
