@@ -16,6 +16,8 @@
 
 <a href="form/showSendForm"><button><spring:message code="sendmoney"></spring:message></button></a>
 <a href="form/showReceiveForm"><button><spring:message code="receivemoney"></spring:message></button></a>
+<br><br>
+<a href="sort/list">Sort the List</a>
 
 
 </body>

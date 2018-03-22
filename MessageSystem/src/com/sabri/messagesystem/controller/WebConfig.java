@@ -31,7 +31,7 @@ public class WebConfig {
 	   }
 	
 	
-	
+	//Printer by Locale
 	public static class MyBean {
         @Autowired
         private MessageSource messageSource;
